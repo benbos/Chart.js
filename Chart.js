@@ -1207,6 +1207,11 @@
 		tooltipPosition : function(){
 			var centreAngle = this.startAngle + ((this.endAngle - this.startAngle) / 2),
 				rangeFromCentre = (this.outerRadius - this.innerRadius) / 2 + this.innerRadius;
+
+			// Quick fix
+			// console.log(instance.options);
+			rangeFromCentre = 100;
+
 			return {
 				x : this.x + (Math.cos(centreAngle) * rangeFromCentre),
 				y : this.y + (Math.sin(centreAngle) * rangeFromCentre)
