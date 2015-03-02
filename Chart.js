@@ -1213,7 +1213,7 @@
 			// rangeFromCentre = 100; // Desktop
 			// rangeFromCentre = 70; // Mobile
 
-			rangeFromCentre = rangeFromCentre * 0.59;
+			rangeFromCentre = rangeFromCentre * 0.55;
 
 			return {
 				x : this.x + (Math.cos(centreAngle) * rangeFromCentre),
